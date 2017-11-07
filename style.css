@@ -8,9 +8,11 @@ body {
 
 h1{
     font-weight:200;
-    font-size:27pt;
+    font-size:35pt;
     color:#7ac7c3;
 }
+
+
 
 p{font-weight:300;}
 
@@ -21,6 +23,12 @@ p{font-weight:300;}
     height:300px;
     text-align:center;
     margin:0;
+}
+
+@media (max-width: 768px) {
+    .warning-content {
+        top:10%;
+    }
 }
 
 .play-button {
