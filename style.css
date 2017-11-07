@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
+
+body {
+    background: #EEEEF4;
+    color:#999;
+    font-family:Roboto;
+}
+
+h1{
+    /* font-weight:100; */
+    font-size:27pt;
+    color:#7ac7c3;
+}
+
+p{font-weight:300;}
+
+.warning-content {
+	position:absolute;
+    top:25%;
+    width:100%;
+    height:300px;
+    text-align:center;
+    margin:0;
+}
+
+.play-button {
+    background: #7ac7c3;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background 0.3s ease-in-out;
+}
+
+.play-button:hover {
+    background: #ee3e52;
+}
