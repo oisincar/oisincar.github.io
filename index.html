@@ -1,147 +1,462 @@
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Applify - App Landing Page</title>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/applify.min.css"/>
+    </head>
+    <body class="ui-transparent-nav" data-fade_in="on-load">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <!-- Navbar Fixed + Default -->
+        <nav class="navbar navbar-fixed-top transparent navbar-light bg-white">
+            <div class="container">
 
-    <link rel="stylesheet" href="style.css">
-    <title>Syze.ai</title>
-</head>
+                <!-- Navbar Logo -->
+                <a class="ui-variable-logo navbar-brand" href="index.html" title="Syze.ai">
+                    <!-- Default Logo -->
+                    <img class="logo-default" src="assets/img/logo/applify-logo.png"
+                         alt="Applify - App Landing HTML Template" data-uhd>
+                    <!-- Transparent Logo -->
+                    <img class="logo-transparent" src="assets/img/logo/applify-logo-white.png"
+                         alt="Applify - App Landing HTML Template" data-uhd>
+                </a><!-- .navbar-brand -->
 
-<body>
-    <script type="text/javascript">
+                <!-- Navbar Navigation -->
+                <div class="ui-navigation navbar-center">
+                    <ul class="nav navbar-nav">
+                        <!-- Nav Item -->
+                        <li>
+                            <a href="#" data-scrollto="features">Features</a>
+                        </li>
+                        <!-- Nav Item -->
+                        <li>
+                            <a href="#" data-scrollto="showcase">Showcase</a>
+                        </li>
+                        <!-- Nav Item -->
+                        <li>
+                            <a href="#" data-scrollto="integrate">Integrate</a>
+                        </li>
+                        <!-- Nav Item -->
+                        <li>
+                            <a href="#" data-scrollto="code">Code</a>
+                        </li>
+                        <!-- Nav Item -->
+                        <!-- <li> -->
+                        <!-- <a href="page-pricing.html">Pricing</a> -->
+                        <!-- </li> -->
+                        <!-- Nav Item -->
+                        <!-- <li> -->
+                        <!-- <a href="page-api-docs.html">API Docs</a> -->
+                        <!-- </li> -->
+                    </ul><!--.navbar-nav -->
+                </div><!--.ui-navigation -->
 
-     $(document).ready(function() {
-         // Gets the video src from the data-src on each button
-         var $videoSrc;
-         $('.play-button').click(function() {
-             $videoSrc = $(this).data( "src" );
-         });
-         console.log($videoSrc);
-         // when the modal is opened autoplay it
-         $('#myModal').on('shown.bs.modal', function (e) {
-             // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
-             $("#video").attr('src',$videoSrc + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autoplay=1" );
-         })
-         // stop playing the youtube video when I close the modal
-         $('#myModal').on('hide.bs.modal', function (e) {
-             // a poor man's stop video
-             $("#video").attr('src',$videoSrc);
-         })
-         // document ready
-     });
+                <!-- Navbar Toggle -->
+                <a href="#" class="ui-mobile-nav-toggle pull-right"></a>
 
-    </script>
+                <!-- Navbar Button -->
+                <a href="https://themeforest.net/item/applify-app-landing-page-html/20000720"
+                   class="btn btn-sm ui-gradient-green pull-right">Download</a>
 
+            </div><!-- .container -->
+        </nav> <!-- nav -->
 
-    <div class="warning-content">
-        <h1>Site Under Construction</h1>
+        <!-- Main Wrapper -->
+        <div class="main" role="main">
 
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             width="100.001px" height="70px" viewBox="0 0 100 68">
-            <g id="large">
-                <g>
-                    <path d="M55.777,38.473l6.221-1.133c0.017-1.791-0.123-3.573-0.41-5.324l-6.321-0.19c-0.438-2.053-1.135-4.048-2.076-5.931
-                             l4.82-4.094c-0.868-1.552-1.874-3.028-3.005-4.417l-5.569,2.999c-1.385-1.54-2.98-2.921-4.771-4.099l2.124-5.954
-                             c-0.759-0.452-1.543-0.878-2.357-1.269c-0.811-0.39-1.625-0.732-2.449-1.046l-3.325,5.381c-2.038-0.665-4.113-1.052-6.183-1.174
-                             L31.34,6.002c-1.792-0.02-3.571,0.119-5.32,0.406l-0.191,6.32c-2.056,0.439-4.051,1.137-5.936,2.08l-4.097-4.82
-                             c-1.546,0.872-3.022,1.875-4.407,3.006l2.996,5.566c-1.54,1.384-2.925,2.985-4.104,4.778c-2.16-0.771-4.196-1.498-5.953-2.127
-                             c-0.449,0.765-0.875,1.544-1.265,2.354c-0.39,0.811-0.733,1.63-1.049,2.457c1.587,0.981,3.424,2.119,5.377,3.325
-                             c-0.662,2.037-1.049,4.117-1.172,6.186l-6.218,1.136c-0.021,1.789,0.12,3.566,0.407,5.321l6.32,0.188
-                             c0.442,2.06,1.143,4.057,2.082,5.937l-4.818,4.095c0.872,1.549,1.873,3.026,3.009,4.412l5.563-2.998
-                             c1.392,1.54,2.989,2.92,4.777,4.099l-2.121,5.954c0.756,0.446,1.538,0.871,2.348,1.258c0.813,0.394,1.633,0.739,2.462,1.05
-                             l3.326-5.375c2.033,0.662,4.109,1.05,6.175,1.17l1.137,6.221c1.791,0.019,3.569-0.123,5.323-0.407l0.194-6.324
-                             c2.053-0.438,4.045-1.136,5.927-2.079l4.093,4.817c1.55-0.865,3.026-1.87,4.414-2.999l-2.995-5.572
-                             c1.537-1.385,2.914-2.98,4.093-4.772l5.953,2.127c0.448-0.761,0.878-1.545,1.268-2.356c0.388-0.808,0.729-1.631,1.047-2.458
-                             l-5.378-3.324C55.268,42.615,55.655,40.542,55.777,38.473z M42.302,42.435c-3.002,6.243-10.495,8.872-16.737,5.866
-                             c-6.244-2.999-8.872-10.493-5.867-16.736c3.002-6.244,10.495-8.873,16.736-5.869C42.676,28.698,45.306,36.19,42.302,42.435z"  fill="none" stroke="#7ac7c3"/>    <animateTransform
-                                                                                                                                                                                             attributeName="transform"
-                                                                                                                                                                                             begin="0s"
-                                                                                                                                                                                             dur="3s"
-                                                                                                                                                                                             type="rotate"
-                                                                                                                                                                                             from="0 31 37"
-                                                                                                                                                                                             to="360 31 37"
-                                                                                                                                                                                             repeatCount="indefinite"
-                             </animateTransform>
-                </g>
-                <g id="small">
-                    <path d="M93.068,19.253L99,16.31c-0.371-1.651-0.934-3.257-1.679-4.776l-6.472,1.404c-0.902-1.436-2.051-2.735-3.42-3.819
-		                     l2.115-6.273c-0.706-0.448-1.443-0.867-2.213-1.238c-0.774-0.371-1.559-0.685-2.351-0.958l-3.584,5.567
-		                     c-1.701-0.39-3.432-0.479-5.118-0.284L73.335,0c-1.652,0.367-3.256,0.931-4.776,1.672l1.404,6.47
-		                     c-1.439,0.899-2.744,2.047-3.835,3.419c-2.208-0.746-4.38-1.476-6.273-2.114c-0.451,0.71-0.874,1.448-1.244,2.229
-		                     c-0.371,0.764-0.68,1.541-0.954,2.329c1.681,1.078,3.612,2.323,5.569,3.579c-0.399,1.711-0.486,3.449-0.291,5.145
-		                     c-2.086,1.034-4.143,2.055-5.936,2.945c0.368,1.648,0.929,3.25,1.67,4.769c1.954-0.426,4.193-0.912,6.468-1.405
-		                     c0.906,1.449,2.06,2.758,3.442,3.853l-2.117,6.27c0.708,0.449,1.439,0.865,2.218,1.236c0.767,0.371,1.551,0.685,2.338,0.96
-		                     c1.081-1.68,2.319-3.612,3.583-5.574c1.714,0.401,3.457,0.484,5.156,0.288L82.695,42c1.651-0.371,3.252-0.931,4.773-1.676
-		                     c-0.425-1.952-0.912-4.194-1.404-6.473c1.439-0.902,2.744-2.057,3.835-3.436l6.273,2.11c0.444-0.7,0.856-1.43,1.225-2.197
-		                     c0.372-0.777,0.691-1.569,0.963-2.361l-5.568-3.586C93.181,22.677,93.269,20.939,93.068,19.253z M84.365,24.062
-		                     c-1.693,3.513-5.908,4.991-9.418,3.302c-3.513-1.689-4.99-5.906-3.301-9.419c1.688-3.513,5.906-4.991,9.417-3.302
-		                     C84.573,16.331,86.05,20.549,84.365,24.062z" fill="none" stroke="#7ac7c3"/>
-                    <animateTransform
-                        attributeName="transform"
-                        begin="0s"
-                        dur="2s"
-                        type="rotate"
-                        from="0 78 21"
-                        to="-360 78 21"
-                        repeatCount="indefinite"
-                    </animateTransform>
-                </g>
-        </svg>
-        <p>
-            Please forgive the inconvenience. <br />
-            We are currently redoing our site.
-        </p>
-        <p>
-            <b>
-                In the meantime, check out our video!
-            </b>
+            <!-- Hero -->
+            <div class="ui-hero hero-lg hero-center hero-svg-layer-2 bg-indigo ui-tilt">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12" data-vertical_center="true" data-vertical_offset="16">
+                            <h1 class="heading animate" data-show="fade-in-up-big" data-delay="100">
+                                Sizing tool powered by machine intellegance and blockchain technology.
+                            </h1>
+                            <p class="paragraph">Recommending the right size for you, saving you time and money.</p>
+                            <div class="actions animate" data-show="fade-in-up-big" data-delay="600">
+                                <a href="#" class="btn ui-gradient-peach shadow-xl" data-scrollto="features">Learn More</a>
+                                <a href="page-pricing.html" class="btn ui-gradient-green shadow-xl">Pricing</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 animate" data-show="fade-in-up" data-delay="400">
+                            <img src="assets/img/mockups/applify-mockup-6.png" alt="Applify - App Landing Page HTML Template"
+                                 data-uhd data-max_width="1000" class="responsive-on-lg"/>
+                        </div>
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .ui-hero -->
 
-            <!-- <button type="button" class="btn play-button" data-toggle="modal" -->
-            <!-- data-src="https://player.vimeo.com/video/231315057" data-target="#myModal"> -->
-            <!-- here -->
-            <!-- </button> -->
-            <!-- <b>!</b> -->
-        </p>
+            <!-- App Features Section -->
+            <div id="features" class="section">
+                <div class="container ui-icon-blocks ui-blocks-h icons-lg">
+                    <div class="row">
+                        <div class="col-sm-4 ui-icon-block">
+                            <div class="icon icon-lg icon-circle icon-rocket ui-gradient-blue"></div>
+                            <h4>Clean Design</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam.
+                            </p>
+                        </div>
+                        <div class="col-sm-4 ui-icon-block">
+                            <div class="icon icon-lg icon-circle icon-ghost ui-gradient-peach"></div>
+                            <h4>Bright Colors</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam.
+                            </p>
+                        </div>
+                        <div class="col-sm-4 ui-icon-block">
+                            <div class="icon icon-lg icon-circle icon-trophy ui-gradient-green"></div>
+                            <h4>Multiple Demos</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam.
+                            </p>
+                        </div>
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .section -->
 
-        </h3>
-
-        <div class="col-sm-4 offset-sm-4" style="padding: 0px;">
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/231315057"></iframe>
-        </div>
-        </div>
-
-        <br></br>
-
-        <div class="alert alert-info" role="alert">
-            <h4 class="alert-heading">We're at Web Summit!</h4>
-            <p>
-Syze is proud to be part of this year's Alpha program at Web Summit. Come talk to us or schedule a meeting with Eoin at eoin@syze.ai. We look forward to showing you our demo.
-            </p>
-        </div>
-
-
-        <!-- Modal -->
-        <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-             <div class="modal-dialog" role="document">
-             <div class="modal-content">
-             <div class="modal-body">
-             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-             <span aria-hidden="true">&times;</span>
-             </button>
-             <div class="embed-responsive embed-responsive-16by9">
-             <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always">></iframe>
-             </div>
-             </div>
-             </div>
-             </div>
-             </div>
-           -->
+            <!-- Video Section -->
+            <div class="section bg-overlay bg-overlay-gradient-purple" data-uhd data-bg="assets/img/backgrounds/bg-1.jpg">
+                <div class="container">
+                    <div class="section-heading center mb-0">
+                        <!-- * replace data-video with your youtube video id -->
+                        <a class="ui-video-toggle" data-video="1c75bkax4eg">
+                            <span class="icon ui-gradient-green fa fa-play"></span>
+                        </a>
+                        <h2 class="heading mt-4">
+                            a vibrant showcase
+                        </h2>
+                        <p class="paragraph">
+                            lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        </p>
+                    </div><!-- .section-heading -->
+                </div><!-- .container -->
+            </div><!-- .section -->
 
 
-    </div>
+            <!-- Steps Section -->
+            <div id="how-it-works" class="section bg-light">
+                <div class="container">
+                    <!-- Section Heading -->
+                    <div class="section-heading center">
+                        <h2 class="heading text-dark-gray">
+                            All in 3 Easy Steps
+                        </h2>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div><!-- .section-heading -->
 
-</body>
+                    <!-- UI Steps -->
+                    <div class="ui-showcase-blocks ui-steps">
+                        <!-- Step 1 -->
+                        <div class="step-wrapper">
+                            <span class="step-number ui-gradient-blue">1</span>
+                            <div class="row">
+                                <div class="col-md-6" data-vertical_center="true">
+                                    <h4 class="heading text-dark-gray">
+                                        Modern UI Design
+                                    </h4>
+                                    <p class="paragraph">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                    <a href="#" class="btn-link btn-arrow">Explore</a>
+                                </div>
+                                <div class="col-md-6">
+                                    <img class="responsive-on-xs" src="assets/img/mockups/applify-mockup-7.png" data-uhd
+                                         alt="Applify - App Landing HTML Template" data-max_width="464"/>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="step-wrapper">
+                            <span class="step-number ui-gradient-blue">2</span>
+                            <div class="row">
+                                <div class="col-md-6" data-vertical_center="true">
+                                    <h4 class="heading text-dark-gray">
+                                        Photoshop Mockups included Free!
+                                    </h4>
+                                    <p class="paragraph">
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                        officia deserunt mollit anim id est laborum.
+                                    </p>
+                                    <a href="#" class="btn-link btn-arrow">Explore</a>
+                                </div>
+                                <div class="col-md-6">
+                                    <img class="responsive-on-xs" src="assets/img/mockups/applify-mockup-8.png" data-uhd
+                                         alt="Applify - App Landing HTML Template" data-max_width="445"/>
+						                    </div>
+					                  </div>
+				                </div>
+				                <!-- Step 2 -->
+				                <div class="step-wrapper">
+					                  <span class="step-number ui-gradient-blue">3</span>
+					                  <div class="row">
+						                    <div class="col-md-6" data-vertical_center="true">
+							                      <h4 class="heading text-dark-gray">
+								                        Built on Bootstrap 4
+							                      </h4>
+							                      <p class="paragraph">
+								                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+								                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+								                        officia deserunt mollit anim id est laborum.
+							                      </p>
+							                      <a href="#" class="btn-link btn-arrow">Explore</a>
+						                    </div>
+						                    <div class="col-sm-6">
+							                      <img class="responsive-on-xs" src="assets/img/mockups/applify-mockup-10.png" data-uhd
+							                           alt="Applify - App Landing HTML Template" data-max_width="451"/>
+						                    </div>
+					                  </div>
+				                </div>
+			              </div>
+		            </div><!-- .container -->
+	          </div><!-- .section -->
+
+            <!-- FAQ Section -->
+            <div class="section bg-light">
+                <div class="container">
+                    <div class="section-heading center">
+                        <h2 class="heading text-indigo">
+                            Frequently Asked
+                        </h2>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        </p>
+                    </div><!-- .section-heading -->
+                    <div class="row">
+                        <div class="col-md-6" data-vertical_center="true">
+                            <!-- Accordion -->
+                            <div class="ui-accordion-panel ui-indigo">
+                                <!-- Accordion 1  -->
+                                <div class="ui-card shadow-sm ui-accordion">
+                                    <h6 class="toggle" data-toggle="accordion-one">1. Lorem Ipsum Dolor Sit?</h6>
+                                    <div class="body in" data-accord="accordion-one">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="#" target="_blank">Learn more.</a></p>
+                                    </div>
+                                </div>
+                                <!-- Accordion 2  -->
+                                <div class="ui-card shadow-sm ui-accordion">
+                                    <h6 class="toggle" data-toggle="accordion-two">2. Amet Consectetur Adipisicing?</h6>
+                                    <div class="body" data-accord="accordion-two">
+                                        <p>Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat,
+                                            condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum
+                                            gravida et. Integer lectus nisi, facilisis sit amet eleifend nec.
+                                            <a href="#" target="_blank">Learn more.</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Accordion 3  -->
+                                <div class="ui-card shadow-sm ui-accordion">
+                                    <h6 class="toggle" data-toggle="accordion-three">3. Elit Sed Do Eiusmo?</h6>
+                                    <div class="body" data-accord="accordion-three">
+                                        <p>Aliquam erat volutpat. Maecenas scelerisque, orci sit amet cursus tincidunt, libero
+                                            nisl eleifend tortor, vitae cursus risus mauris vitae nisi. Cras laoreet ultrices
+                                            ligula eget tempus.
+                                            <a href="#" target="_blank">Learn more.</a></p>
+							                      </div>
+						                    </div>
+						                    <!-- Accordion 4  -->
+						                    <div class="ui-card shadow-sm ui-accordion">
+							                      <h6 class="toggle" data-toggle="accordion-four">4. Ea Commodo Consequat?</h6>
+							                      <div class="body" data-accord="accordion-four">
+								                        <p>In hac habitasse platea dictumst. Pellentesque ornare blandit orci, eget tristique
+									                          risus convallis ut. Vivamus a sapien neque. Morbi malesuada massa ac sapien luctus
+									                          vulputate.
+									                          <a href="#" target="_blank">Learn more.</a></p>
+							                      </div>
+						                    </div>
+
+					                  </div><!-- Accordion -->
+				                </div>
+				                <div class="col-md-6">
+					                  <img src="assets/img/mockups/applify-mockup-4.png" data-uhd
+					                       alt="Applify - App Landing Page HTML Template" class="responsive-on-sm" data-max_width="500"/>
+				                </div>
+			              </div><!-- .row -->
+		            </div><!-- .container -->
+	          </div><!-- .section -->
+
+
+
+            <!-- Client Logos Section  -->
+            <div class="section ui-clients-logos section-sm">
+                <div class="container">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <img src="assets/img/clients-logos/logo.png" alt="Applify - App Landing HTML Template" data-uhd/>
+                        </div>
+                        <div>
+                            <img src="assets/img/clients-logos/logo.png" alt="Applify - App Landing HTML Template" data-uhd/>
+                        </div>
+                        <div>
+                            <img src="assets/img/clients-logos/logo.png" alt="Applify - App Landing HTML Template" data-uhd/>
+                        </div>
+                        <div>
+                            <img src="assets/img/clients-logos/logo.png" alt="Applify - App Landing HTML Template" data-uhd/>
+                        </div>
+                        <div>
+                            <img src="assets/img/clients-logos/logo.png" alt="Applify - App Landing HTML Template" data-uhd/>
+                        </div>
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .ui-clients-logos  -->
+
+            <!-- Footer -->
+            <footer class="ui-footer bg-indigo">
+                <div class="container pt-6 pb-6">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 footer-about footer-col center-on-sm">
+                            <img src="assets/img/logo/applify-logo-white.png" data-uhd
+                                 alt="Applif - App Landing HTML Template"/>
+                            <p class="mt-1">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Donec elementum ligula eu sapien consequat eleifend.
+                            </p>
+                        </div>
+                        <div class="col-md-2 col-6 footer-col">
+                            <h6 class="heading footer-heading">Quick Nav</h6>
+                            <ul class="footer-nav">
+                                <li>
+                                    <a href="demo-mobile-app-1.html">Mobile App 1</a>
+                                </li>
+                                <li>
+                                    <a href="demo-mobile-app-2.html">Mobile App 2</a>
+                                </li>
+                                <li>
+                                    <a href="demo-saas.html">Mobile Saas</a>
+                                </li>
+                                <li>
+                                    <a href="demo-web-app.html">Web App</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#demos">More Demos</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 col-6 footer-col">
+                            <h6 class="heading footer-heading">Other Pages</h6>
+                            <ul class="footer-nav">
+                                <li>
+                                    <a href="page-api-docs.html">API Docs</a>
+                                </li>
+                                <li>
+                                    <a href="page-pricing.html">Pricing Page</a>
+                                </li>
+                                <li>
+                                    <a href="page-contact.html">Contact page</a>
+                                </li>
+                                <li>
+                                    <a href="page-blog-grid.html">Blog Grid</a>
+                                </li>
+                                <li>
+                                    <a href="page-coming-soon.html">Comig Soon</a>
+						                    </li>
+						                    <li>
+							                      <a href="page-404.html">404 Error</a>
+						                    </li>
+					                  </ul>
+				                </div>
+				                <div class="col-md-4 col-sm-6 footer-col center-on-sm">
+					                  <h6 class="heading footer-heading">Newsletter</h6>
+					                  <!-- Form -->
+					                  <form autocomplete="on" id="sign-up-form" name="sign-up-form">
+						                    <div class="form-group">
+							                      <div class="input-group">
+								                        <!-- Email Input -->
+								                        <input autocomplete="email" class="input form-control" data-validation="required"
+								                               data-validation-error-msg="Please enter your email" name="email"
+								                               placeholder="Email">
+								                        <div class="input-group-append">
+									                          <!-- Submit Button -->
+									                          <button class="btn ui-gradient-peach">Subscribe <span class="fa fa-send"></span>
+									                          </button>
+								                        </div>
+							                      </div>
+						                    </div>
+					                  </form>
+					                  <div>
+						                    <a class="btn ui-gradient-blue btn-circle shadow-md">
+							                      <span class="fa fa-facebook"></span>
+						                    </a>
+						                    <a class="btn ui-gradient-peach btn-circle shadow-md">
+							                      <span class="fa fa-instagram"></span>
+						                    </a>
+						                    <a class="btn ui-gradient-green btn-circle shadow-md">
+							                      <span class="fa fa-twitter"></span>
+						                    </a>
+						                    <a class="btn ui-gradient-purple btn-circle shadow-md">
+							                      <span class="fa fa-pinterest"></span>
+						                    </a>
+					                  </div>
+				                </div>
+			              </div><!-- .row -->
+		            </div><!-- .container -->
+
+		            <!-- Footer Copyright -->
+		            <div class="footer-copyright bg-gray">
+			              <div class="container">
+				                <div class="row">
+					                  <!-- Copyright -->
+					                  <div class="col-sm-6 center-on-sm">
+						                    <p>
+							                      &copy; 2017 <a href="http://codeytech.com" target="_blank" title="Codeytech">Codeytech</a>
+						                    </p>
+					                  </div>
+					                  <!-- Social Icons -->
+					                  <div class="col-sm-6 text-right">
+						                    <ul class="footer-nav">
+							                      <li>
+								                        <a href="#">
+									                          Privacy Policy
+								                        </a>
+							                      </li>
+							                      <li>
+								                        <a href="#">
+									                          Terms &amp; Conditions
+								                        </a>
+							                      </li>
+							                      <li>
+								                        <a href="#">
+									                          FAQ
+								                        </a>
+							                      </li>
+						                    </ul>
+					                  </div>
+				                </div>
+			              </div><!-- .container -->
+		            </div><!-- .footer-copyright -->
+	          </footer><!-- .ui-footer -->
+
+        </div><!-- .main -->
+
+        <!-- Scripts -->
+        <script src="assets/js/libs/jquery/jquery-3.2.1.min.js"></script>
+        <script src="assets/js/libs/waypoints/jquery.waypoints.min.js"></script>
+        <script src="assets/js/libs/slider-pro/jquery.sliderPro.min.js"></script>
+        <script src="assets/js/libs/owl.carousel/owl.carousel.min.js"></script>
+        <script src="assets/js/libs/prism/prism.js"></script>
+        <!--
+             # Google Maps
+             # Add Your Google Maps API Key Below !!
+        -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5B2iXEELo6aIReGYLJdVKBlzHnrM0YLU"></script>
+        <script src="assets/js/applify/ui-map.js"></script>
+        <script src="assets/js/libs/form-validator/form-validator.min.js"></script>
+        <script src="assets/js/libs/bootstrap.js"></script>
+        <script src="assets/js/applify/build/applify.js"></script>
+    </body>
+</html>
