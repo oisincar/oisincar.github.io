@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/applify.min.css"/>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body class="ui-transparent-nav" data-fade_in="on-load">
 
@@ -27,22 +28,11 @@
                 <!-- Navbar Navigation -->
                 <div class="ui-navigation navbar-center">
                     <ul class="nav navbar-nav">
-                        <!-- Nav Item -->
+                        <li> <a href="#" data-scrollto="home1">Home</a> </li>
                         <li> <a href="#" data-scrollto="features">Features</a> </li>
-                        <!-- Nav Item -->
-                        <li> <a href="#" data-scrollto="video">Video</a> </li>
-                        <!-- Nav Item -->
-                        <li> <a href="#" data-scrollto="how-it-works">How It Works</a> </li>
-                        <!-- Nav Item -->
-                        <li> <a href="#" data-scrollto="faq">FAQ</a> </li>
-                        <!-- Nav Item -->
-                        <!-- <li> -->
-                        <!-- <a href="page-pricing.html">Pricing</a> -->
-                        <!-- </li> -->
-                        <!-- Nav Item -->
-                        <!-- <li> -->
+                        <li> <a href="#" data-scrollto="video">How It Works</a> </li>
+                        <li> <a href="#" data-scrollto="steps">Scan</a> </li>
                         <!-- <a href="page-api-docs.html">API Docs</a> -->
-                        <!-- </li> -->
                     </ul><!--.navbar-nav -->
                 </div><!--.ui-navigation -->
 
@@ -56,12 +46,12 @@
         <div class="main" role="main">
 
             <!-- Hero -->
-            <div class="ui-hero hero-lg hero-center hero-svg-layer-2 bg-indigo ui-tilt">
+            <div id="home" class="ui-hero hero-lg hero-center hero-svg-layer-2 bg-indigo ui-tilt">
                 <div class="container">
-                    <div class="row">
+                    <div id="home1" class="row">
                         <div class="col-sm-12" data-vertical_center="true" data-vertical_offset="16">
                             <h1 class="heading animate" data-show="fade-in-up-big" data-delay="100">
-                                Online clothes shopping powered by computer vision.
+                                Online shopping powered by computer vision.
                             </h1>
                             <p class="paragraph">Recommending the right size for you, saving you time and money.</p>
                             <div class="actions animate" data-show="fade-in-up-big" data-delay="600">
@@ -127,7 +117,7 @@
 
 
             <!-- Steps Section -->
-            <div id="how-it-works" class="section bg-light">
+            <div id="steps" class="section bg-light">
                 <div class="container">
                     <!-- Section Heading -->
                     <div class="section-heading center">
@@ -152,7 +142,7 @@
                                     <p class="paragraph">
                                         Place your phone facing towards you and step back, until your entire body is in frame.
                                     </p>
-                                    <a href="#" class="btn-link btn-arrow">Explore</a>
+                                    <!-- <a href="#" class="btn-link btn-arrow">Explore</a> -->
                                 </div>
                                 <div class="col-md-6">
                                     <img class="responsive-on-xs" src="assets/img/mockups/applify-mockup-7.png" data-uhd
@@ -171,10 +161,10 @@
                                     <p class="paragraph">
                                         Pivot as your phone takes two photos of you, one front and one profile.
                                     </p>
-                                    <a href="#" class="btn-link btn-arrow">Explore</a>
+                                    <!-- <a href="#" class="btn-link btn-arrow">Explore</a> -->
                                 </div>
                                 <div class="col-md-6">
-                                    <img class="responsive-on-xs" src="assets/img/mockups/applify-mockup-8.png" data-uhd
+                                    <img class="responsive-on-xs" src="assets/img/app-screens/syze-2poses.png" data-uhd
                                          alt="Scan Image" data-max_width="445"/>
 						                    </div>
 					                  </div>
@@ -190,7 +180,7 @@
 							                      <p class="paragraph">
                                         Sign up as the system works it's magic. Now shop for clothes that fit you!
 							                      </p>
-							                      <a href="#" class="btn-link btn-arrow">Explore</a>
+							                      <!-- <a href="#" class="btn-link btn-arrow">Explore</a> -->
 						                    </div>
 						                    <div class="col-sm-6">
 							                      <img class="responsive-on-xs" src="assets/img/mockups/applify-mockup-10.png" data-uhd
@@ -202,212 +192,77 @@
 		            </div><!-- .container -->
 	          </div><!-- .section -->
 
-            <!-- FAQ Section -->
-            <!-- <div id="faq" class="section bg-light">
-                 <div class="container">
-                 <div class="section-heading center">
-                 <h2 class="heading text-indigo">
-                 Frequently Asked
-                 </h2>
-                 <p class="paragraph">
-                 Questions that are frequently asked.
-                 </p>
-                 </div>
-                 <div class="row">
-                 <div class="col-md-6" data-vertical_center="true">
-                 <div class="ui-accordion-panel ui-indigo">
-                 <div class="ui-card shadow-sm ui-accordion">
-                 <h6 class="toggle" data-toggle="accordion-one">1. Do I need to be wearing tight clothing/nothing?</h6>
-                 <div class="body in" data-accord="accordion-one">
-                 <p>
-                 No. Our technology can account for various clothing types. However, we recommend clothing that at least hugs your figure for more accurate results.
-                 <a href="#" target="_blank">Learn more.</a></p>
-                 </div>
-                 </div>
-                 <div class="ui-card shadow-sm ui-accordion">
-                 <h6 class="toggle" data-toggle="accordion-two">2. How accurate is Syze?</h6>
-                 <div class="body" data-accord="accordion-two">
-                 <p>
-                 Our system can generate models accurate to within half a centimeter.
-                 <a href="#" target="_blank">Learn more.</a>
-                 </p>
-                 </div>
-                 </div>
-                 <div class="ui-card shadow-sm ui-accordion">
-                 <h6 class="toggle" data-toggle="accordion-three">3. When will it be ready?</h6>
-                 <div class="body" data-accord="accordion-three">
-                 <p>
-                 We're currently still working on the infastructure. We expect to have a closed beta with an open beta to follow in the Winter.
-                 <a href="#" target="_blank">Learn more.</a></p>
-							   </div>
-						     </div>
-					       </div>
-				         </div>
-				         <div class="col-md-6">
-					       <img src="assets/img/mockups/applify-mockup-4.png" data-uhd
-					       alt="Applify - App Landing Page HTML Template" class="responsive-on-sm" data-max_width="500"/>
-				         </div>
-			           </div>
-		             </div>
-	               </div>
-            -->
-
-
             <!-- Client Logos Section  -->
             <div class="section ui-clients-logos section-sm">
                 <div class="container">
                     <div class="d-flex justify-content-between">
                         <div>
-                            <img src="assets/img/clients-logos/trinity-logo.png" alt="Trinity Logo" data-uhd/>
+                            <img class="client-img" src="assets/img/clients-logos/trinity-logo.png" alt="Trinity Logo" data-uhd/>
                         </div>
                         <div>
-                            <img src="assets/img/clients-logos/launchbox.png" alt="Launchbox Logo" data-uhd/>
+                            <img class="client-img" src="assets/img/clients-logos/launchbox.png" alt="Launchbox Logo" data-uhd/>
                         </div>
                         <div>
-                            <img src="assets/img/clients-logos/trinity-logo.png" alt="Trinity Logo" data-uhd/>
-                        </div>
-                        <div>
-                            <img src="assets/img/clients-logos/launchbox.png" alt="Launchbox Logo" data-uhd/>
-                        </div>
-                        <div>
-                            <img src="assets/img/clients-logos/trinity-logo.png" alt="Trinity Logo" data-uhd/>
-                        </div>
-                        <div>
-                            <img src="assets/img/clients-logos/launchbox.png" alt="Launchbox Logo" data-uhd/>
+                            <img class="client-img" src="assets/img/clients-logos/adapt_logo.png" alt="Trinity Logo" data-uhd/>
                         </div>
                     </div><!-- .row -->
                 </div><!-- .container -->
             </div><!-- .ui-clients-logos  -->
 
             <!-- Footer -->
-            <footer class="ui-footer bg-indigo">
-                <div class="container pt-6 pb-6">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6 footer-about footer-col center-on-sm">
-                            <img src="assets/img/logo/syze_logo_white.png" data-uhd
-                                 alt="Syze Logo"/>
-                            <p class="mt-1">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua. Donec elementum ligula eu sapien consequat eleifend.
-                            </p>
-                        </div>
-                        <div class="col-md-2 col-6 footer-col">
-                            <h6 class="heading footer-heading">Quick Nav</h6>
-                            <ul class="footer-nav">
-                                <li>
-                                    <a href="demo-mobile-app-1.html">Mobile App 1</a>
-                                </li>
-                                <li>
-                                    <a href="demo-mobile-app-2.html">Mobile App 2</a>
-                                </li>
-                                <li>
-                                    <a href="demo-saas.html">Mobile Saas</a>
-                                </li>
-                                <li>
-                                    <a href="demo-web-app.html">Web App</a>
-                                </li>
-                                <li>
-                                    <a href="index.html#demos">More Demos</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-2 col-6 footer-col">
-                            <h6 class="heading footer-heading">Other Pages</h6>
-                            <ul class="footer-nav">
-                                <li>
-                                    <a href="page-api-docs.html">API Docs</a>
-                                </li>
-                                <li>
-                                    <a href="page-pricing.html">Pricing Page</a>
-                                </li>
-                                <li>
-                                    <a href="page-contact.html">Contact page</a>
-                                </li>
-                                <li>
-                                    <a href="page-blog-grid.html">Blog Grid</a>
-                                </li>
-                                <li>
-                                    <a href="page-coming-soon.html">Comig Soon</a>
-						                    </li>
-						                    <li>
-							                      <a href="page-404.html">404 Error</a>
-						                    </li>
-					                  </ul>
-				                </div>
-				                <div class="col-md-4 col-sm-6 footer-col center-on-sm">
-					                  <h6 class="heading footer-heading">Sign up for our mailing list</h6>
-					                  <!-- Form -->
-					                  <form autocomplete="on" id="sign-up-form" name="sign-up-form">
-						                    <div class="form-group">
-							                      <div class="input-group">
-								                        <!-- Email Input -->
-								                        <input autocomplete="email" class="input form-control" data-validation="required"
-								                               data-validation-error-msg="Please enter your email" name="email"
-								                               placeholder="Email">
-								                        <div class="input-group-append">
-									                          <!-- Submit Button -->
-									                          <button class="btn ui-gradient-peach">Subscribe <span class="fa fa-send"></span>
-									                          </button>
-								                        </div>
-							                      </div>
-						                    </div>
-					                  </form>
-					                  <div>
-						                    <a class="btn ui-gradient-blue btn-circle shadow-md">
-							                      <span class="fa fa-facebook"></span>
-						                    </a>
-						                    <a class="btn ui-gradient-peach btn-circle shadow-md">
-							                      <span class="fa fa-instagram"></span>
-						                    </a>
+            <!-- bg-indigo -->
+            <footer class="bg-gray">
 
-						                    <a class="btn ui-gradient-gray btn-circle shadow-md">
-							                      <span class="fa fa-linkedin"></span>
-						                    </a>
-						                    <a class="btn ui-gradient-green btn-circle shadow-md">
-							                      <span class="fa fa-twitter"></span>
-						                    </a>
-						                    <a class="btn ui-gradient-purple btn-circle shadow-md">
-							                      <span class="fa fa-pinterest"></span>
-						                    </a>
-					                  </div>
-				                </div>
-			              </div>
-		            </div>
+        <!-- Footer Copyright -->
+                <div class="footer-copyright bg-gray">
+                    <div class="container">
+                        <div class="row align-items-center text-lg-center">
+                            <div class="col-sm-6 center-on-sm">
+                                <img class="client-img" src="assets/img/logo/syze_logo_white.png" data-uhd
+                                     alt="Syze Logo"/>
+                            </div>
 
-		            <!-- Footer Copyright -->
-		            <div class="footer-copyright bg-gray">
-			              <div class="container">
-				                <div class="row">
-					                  <!-- Copyright -->
-					                  <div class="col-sm-6 center-on-sm">
-						                    <p>
-							                      &copy; 2017 <a href="http://codeytech.com" target="_blank" title="Codeytech">Codeytech</a>
-						                    </p>
-					                  </div>
-					                  <!-- Social Icons -->
-					                  <div class="col-sm-6 text-right">
-						                    <ul class="footer-nav">
-							                      <li>
-								                        <a href="#">
-									                          Privacy Policy
-								                        </a>
-							                      </li>
-							                      <li>
-								                        <a href="#">
-									                          Terms &amp; Conditions
-								                        </a>
-							                      </li>
-							                      <li>
-								                        <a href="#">
-									                          FAQ
-								                        </a>
-							                      </li>
-						                    </ul>
-					                  </div>
-				                </div>
-			              </div><!-- .container -->
-		            </div><!-- .footer-copyright -->
-	          </footer><!-- .ui-footer -->
+                            <div class="col-sm-6 center-on-sm">
+                                <div>
+                                    <a class="btn ui-gradient-blue btn-circle shadow-md">
+                                        <span class="fa fa-facebook"></span>
+                                    </a>
+                                    <a class="btn ui-gradient-peach btn-circle shadow-md">
+                                        <span class="fa fa-linkedin"></span>
+                                    </a>
+                                    <a class="btn ui-gradient-green btn-circle shadow-md">
+                                        <span class="fa fa-twitter"></span>
+                                    </a>
+                                    <a class="btn ui-gradient-purple btn-circle shadow-md">
+                                        <span class="fa fa-envelope"></span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- <div class="col-sm-6 text-right"> -->
+                            <!-- <ul class="footer-nav"> -->
+                            <!-- <li> -->
+                            <!-- <a href="#"> -->
+                            <!-- Privacy Policy -->
+                            <!-- </a> -->
+                            <!-- </li> -->
+                            <!-- <li> -->
+                            <!-- <a href="#"> -->
+                            <!-- Terms &amp; Conditions -->
+                            <!-- </a> -->
+                            <!-- </li> -->
+                            <!-- <li> -->
+                            <!-- <a href="#"> -->
+                            <!-- FAQ -->
+                            <!-- </a> -->
+                                        <!-- </li> -->
+                                        <!-- </ul> -->
+                                        <!-- </div> -->
+                                        <!-- </div> -->
+                    </div>
+                </div>
+
+            </footer><!-- .ui-footer -->
 
         </div><!-- .main -->
 

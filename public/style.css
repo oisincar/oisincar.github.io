@@ -1,0 +1,16 @@
+/* Fix logo rendering */
+.client-img {
+    height: 40px !important;
+    display: inline-block !important;
+}
+
+.align-items-center {
+    -webkit-box-align: center!important;
+    -webkit-align-items: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+
+.footer-copyright {
+    padding: 20px;
+}
